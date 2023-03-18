@@ -91,7 +91,7 @@ if [ "$answer" == "Y" ] || [ "$answer" == "y" ]; then
         read answer3
         
         
-        if [ "$answer" == "Y" ] || [ "$answer" == "y" ]; then
+        if [ "$answer3" == "Y" ] || [ "$answer3" == "y" ]; then
           echo #!/bin/bash > SuDoku-uninstall.sh
 
           echo echo "The program will be uninstalled in the next 5 seconds. Please wait." >> SuDoku-uninstall.sh
