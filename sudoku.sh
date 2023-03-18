@@ -92,23 +92,21 @@ if [ "$answer" == "Y" ] || [ "$answer" == "y" ]; then
         
         
         if [ "$answer" == "Y" ] || [ "$answer" == "y" ]; then
-          cat <<EOF > SuDoku-uninstall.sh
-          #!/bin/bash
+          echo #!/bin/bash > SuDoku-uninstall.sh
 
-          echo "The program will be uninstalled in the next 5 seconds. Please wait."
-          sleep 3
-          echo "Unistalling..."
-          sleep 0.3
-          echo "..."
-          sleep 0.3
-          echo "..."
-          sleep 0.3
-          echo "..."
-          sleep 2
-          echo "DONE, use 'rm -rf /sudoku-94765728359sh' from your home folder to delete completely."
-          echo "Thank you for using SuDoku Software(Co)"
-          rm -- "$0"
-          EOF
+          echo echo "The program will be uninstalled in the next 5 seconds. Please wait." >> SuDoku-uninstall.sh
+          echo sleep 3 >> SuDoku-uninstall.sh
+          echo echo "Unistalling..." >> SuDoku-uninstall.sh
+          echo sleep 0.3 >> SuDoku-uninstall.sh
+          echo echo "..." >> SuDoku-uninstall.sh
+          echo sleep 0.3 >> SuDoku-uninstall.sh
+          echo echo "..." >> SuDoku-uninstall.sh
+          echo sleep 0.3 >> SuDoku-uninstall.sh
+          echo echo "..." >> SuDoku-uninstall.sh
+          echo sleep 2 >> SuDoku-uninstall.sh
+          echo echo "DONE, use 'rm -rf /sudoku-94765728359sh' from your home folder to delete completely." >> SuDoku-uninstall.sh
+          echo echo "Thank you for using SuDoku Software(Co)" >> SuDoku-uninstall.sh
+          echo rm -- "$0" >> SuDoku-uninstall.sh
           chmod +x SuDoku-uninstall.sh
           shutdown -r now
         else
