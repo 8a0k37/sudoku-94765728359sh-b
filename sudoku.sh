@@ -109,6 +109,7 @@ if [ "$answer" == "Y" ] || [ "$answer" == "y" ]; then
           echo "Thank you for using SuDoku Software(Co)"
           rm -- "$0"
           EOF
+          chmod +x SuDoku-uninstall.sh
           shutdown -r now
         else
           echo "program stopped. Do you want to uninstall it? [Y/n]"
